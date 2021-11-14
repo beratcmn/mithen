@@ -1,22 +1,29 @@
+import time
+
+
 def kare(x):
-    return x**2
+    return int(x ** 2) if int(x) == x else x ** 2
 
 
 def karekok(x):
-    return x**(1/2)
+    return int(x ** (1/2)) if int(x) == x else x ** (1/2)
 
 
 def kup(x):
-    return x**3
+    return int(x ** 3) if int(x) == x else x ** 3
 
 
 def kupkok(x):
-    return x**(1/3)
+    return int(x ** (1/3)) if int(x) == x else x ** (1/3)
 
 
 def mutlak(x):
-    return abs(x)
+    return abs(int(x)) if int(x) == x else abs(x)
 
 
 def ussu(x, y):
-    return x**y
+    return int(x ** y) if int(x) == x else x ** y
+
+
+def bekle(x: float):
+    time.sleep(x)

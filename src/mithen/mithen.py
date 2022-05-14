@@ -21,7 +21,7 @@ def mutlak(x):
     return abs(int(x)) if int(x) == x else abs(x)
 
 
-def ussu(x, y):
+def us(x, y):
     return int(x ** y) if int(x) == x else x ** y
 
 
